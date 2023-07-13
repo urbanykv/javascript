@@ -7,7 +7,3 @@ function somar(num1, num2){
 var resultado = somar(10, 15);
 
 console.log(resultado);
-
-function{
-    
-}
