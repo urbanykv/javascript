@@ -2,10 +2,12 @@
 function escrever(){
     console.log('Giulia');
 }
-var a = 'm' 
-if(a = 'm'){
-    setInterval(escrever, 2000)
-}else{
-    setInterval(escrever, 500)
-}
-//setInterval(escrever, 2000)  a função é realizada de 2 em 2 segundos.
+
+// Intervalo
+setInterval(escrever, 2000) // a função é realizada de 2 em 2 segundos.
+
+//Timeout (tempo esgotado)
+setTimeout(escrever, 2000) // a função é realizada após 2 segundos (como se fosse um atraso).
+
+
+
