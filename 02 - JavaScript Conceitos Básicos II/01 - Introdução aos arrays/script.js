@@ -78,7 +78,54 @@ delete familia[7]; // deletando dados de um array (sobra empty item)
 console.log(familia);
 
 familia[7] = 'Felicia'
+console.log(familia);
 
-familia.splice(7, 1) // A partir do índice 3 deleta 1 elemento
+familia.splice(7, 1) // A partir do índice 7 deleta 1 elemento
 
 console.log(familia);
+
+familia.splice(7, 0 , 'Julia') // A partir do índice 7 não delete nenhum, mas adicione 'Julia'
+
+
+familia.splice(7, 1, 'Juliana')
+console.log(familia);
+
+//Iterar em um array
+
+for(var i = 0; i < precos.length; i++){
+    console.log(precos[i]);
+}
+
+//Removendo elementos do final do array
+precos.pop();
+console.log(precos);
+
+var umDoisTres = precos.pop();
+console.log(umDoisTres);
+console.log(precos);
+
+//Removendo elemento inicial do array
+var inicial = precos.shift();
+console.log(inicial);
+
+//Inserindo elementos no inicio de um array
+var inicial = precos.unshift(53.4);
+console.log(precos);
+
+//Retorna um novo array a partir do índice informado
+var novo = precos.slice(0, 1); // a partir do índice 0, pegue até o índice 1 sem inclui-lo
+console.log(novo); // [53.4]
+
+var pares = [2, 4, 6, 8, 10]
+var impares = [1, 3, 5, 7, 9]
+
+var juntar = pares.concat(impares)// concatena as duas arrays (a ordem altera conforme a forma q vc concatena, exemplo: impares.concat(pares) iria resultar em um array com a array de impares no inicio e pares no final.)
+console.log(juntar);
+
+juntar.sort(function(a, b){return a - b;});
+console.log(juntar);
+
+// 4 x 4
+var tabuleiro = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+
+console.log(tabuleiro [0] [3]);
