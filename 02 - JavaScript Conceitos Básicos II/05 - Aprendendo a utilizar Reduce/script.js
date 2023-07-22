@@ -23,3 +23,22 @@ function somar(anterior, atual){
 
 var ret = precos.reduce(somar); // Somando os valores usando .reduce (ele reduz o array usando os paramêtros anterior e atual no array precos, somando o anterior e o atual até finalizar a array inteira.)
 console.log(ret);
+
+//Exemplo map / reduce
+
+function addTaxa(valor){
+    return valor + 5;
+}
+
+var ret = precos.map(addTaxa).reduce(somar);
+console.log(ret);
+
+// Exempli filter / map / reduce
+
+function precoMaiorQ4(valor){
+    return valor > 4;
+}
+
+ret = precos.filter(precoMaiorQ4).map(addTaxa).reduce(somar)
+
+console.log(ret);
