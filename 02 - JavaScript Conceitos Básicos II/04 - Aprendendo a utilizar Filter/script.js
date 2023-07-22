@@ -24,3 +24,24 @@ console.log(ret);
 var ret = numeros.filter(impares) 
 console.log(ret);
 
+var alunos = [
+    {nome: 'Pedro', nota: 8.5},
+    {nome: 'Maria', nota: 10},
+    {nome: 'Fernanda', nota: 9.2},
+    {nome: 'Ricardo', nota: 7.3},
+]
+
+function filtrarNotasMaioresQueOito (aluno){
+    return aluno.nota > 8;
+}
+
+function filtrarNotasMaioresQueSete (aluno){
+    return aluno.nota > 7;
+}
+
+var result = alunos.filter(filtrarNotasMaioresQueOito)
+console.log(result);
+
+result = alunos.filter(filtrarNotasMaioresQueSete)
+console.log(alunos.length);
+console.log(result.length);
