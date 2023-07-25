@@ -1,0 +1,1 @@
+//Funções com parâmetros varáveis e valor padrão
