@@ -22,3 +22,22 @@ function fazAlgo(n1, n2, funcao){
 
 console.log(fazAlgo(5, 5, somar));
 console.log(fazAlgo(5, 5, sub));
+
+/*
+Cidadãos de Primeira Classe
+Fisrt-Class Citizens
+Higher-Order Function
+*/
+
+
+function mensagem(){
+    console.log('Evolua seu lado Geek!');
+}
+
+mensagem()
+
+let valores = [1, 3.4, true, somar];
+
+for(let i = 0; i < valores.length; i++){
+    console.log(typeof(valores[i]));
+}
