@@ -1,51 +1,60 @@
-        //Estruturas de Repetição
-        //for
-        for(var i = 0; i <= 10; i++){
-            console.log(i);
-        }
+//Estruturas de Repetição
+//for
+for(var i = 0; i <= 10; i++){
+    console.log(i);
+}
 
-        //while
-        var j = 0;
+//while
+var j = 0;
 
-        while(j <= 10){
-            console.log(j);
-            j++;
-        }
+while(j <= 10){
+    console.log(j);
+    j++;
+}
 
-        //do-while
-        var cont = 0;
+//do-while
+var cont = 0;
 
-        //do{
-        //    console.log('Imprime o valor de cont: ' + cont);
-        //    cont++
-        //}while(cont <= 5)
+//do{
+//    console.log('Imprime o valor de cont: ' + cont);
+//    cont++
+//}while(cont <= 5)
 
-        //Testes
+//Testes
 
-        let animais = [
-            'Tartaruga',
-            'Baleia',
-            'Tubarão',
-            'Golfinho',
-            'Baiacu',
-            'Arraia',
-            'Anemona',
-            'Cavalo-Marinho',
-            'Orca',
-            'Peixe-Boi'
-        ];
+let animais = [
+    'Tartaruga',
+    'Baleia',
+    'Tubarão',
+    'Golfinho',
+    'Baiacu',
+    'Arraia',
+    'Anemona',
+    'Cavalo-Marinho',
+    'Orca',
+    'Peixe-Boi'
+];
 
-        let contador = 0;
+/*let contador = 0;
 
-        while(contador < animais.length){
-            console.log(animais);
-            contador++
-        }
+while(contador < animais.length){
+    console.log(animais);
+    contador++
+}
 
 
-        let numero = 0;
+let numero = 0;
 
-        while(numero <= 10){
-            console.log(numero);
-            numero++
-        }
+while(numero <= 10){
+    console.log(numero);
+    numero++
+}*/
+
+let num = 7;
+let conta = 0;
+
+while(conta <= 10){
+    let resultado = num * conta
+    console.log(`o Resultado da Tabuada de ${num} x ${conta} é: ${resultado}`);
+    conta++
+}
