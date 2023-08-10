@@ -24,3 +24,9 @@ let res3 = function(valor){
 }
 
 console.log(res3(9));
+
+let mostrar = function(v1, v2, calculo){
+    console.log(calculo(v1, v2));
+}
+
+mostrar(6, 5, (n1, n2) => { return n1 * n2;})
