@@ -1,22 +1,31 @@
-let disciplinas = [
-    { id: 1, nome: "português", carga_horaria: 250 },
-    { id: 2, nome: "matemática", carga_horaria: 220 },
-    { id: 3, nome: "história", carga_horaria: 150 },
-    { id: 4, nome: "geografia", carga_horaria: 150 },
-    { id: 5, nome: "inglês", carga_horaria: 70 }
-];
+// Funções Construtoras
 
+function Pessoa(n, s){
+    // atributos privados só conseguimos fazer uso dentro da função construtora
+    let altura = 0.30;
+    let peso = 0.5;
+    let idade = 0;
+    let nome = n;
+    let sexo = s;
 
-for(let disciplina of disciplinas){
+    // atributo público pode ser acessado fora da função construtora
+    this.raca = 'Humano';
 
-    let id_disciplina = disciplina.id;
-    let nome_disciplina = disciplina.nome;
-    let carga_horaria_disciplina = disciplina.carga_horaria;
+    // método privado só conseguimos fazer uso dentro da função construtora
+    let imprimirDados = () => {
+        console.log(`Nome: ${nome}, Idade: ${idade}, Peso: ${peso}, Altura: ${altura}, Sexo: ${sexo}`);
+    }
+    // método público conseguimos acessar fora da função construtora
 
-    console.log("Id da disciplina: " + id_disciplina);
-    console.log("Nome da disciplina: " + nome_disciplina);
-    console.log("Carga horária da disciplina: " + carga_horaria_disciplina);
+    this.fazerAniversario = () => {
+        idade += 1;
+        imprimirDados();
+    }
 
-    console.log("\n");
-
+    this.getIdade = () => {
+        return idade
+    }
 }
+
+const Debora = new Pessoa('Angelina', 'Femininno')
+console.log(Debora); // tudo que é privado n aparece na saída.
