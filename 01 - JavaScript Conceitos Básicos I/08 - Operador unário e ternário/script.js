@@ -25,3 +25,7 @@ console.log(sexo === 'm' ? 'Masculino' : 'Feminino');
 var idade = 25
 
 console.log(idade === 25 ? 'Tem 25 anos' : 'Não tem 25 anos.');
+
+let meses
+ = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
