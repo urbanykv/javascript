@@ -12,4 +12,4 @@ class Carro{
         this.marca = 'Honda';
         this.modelo = modelo;
     }
-}
+} // Não existe encapsulamento em JavaScript.
