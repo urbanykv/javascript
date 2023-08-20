@@ -104,6 +104,20 @@ console.log(pessoa);
 
 // Instanciação de Objetos - Forma 4 (Função Construtora)
 
-const l1 = (cor) => {
-    this.cor = cor
+function lampada(cor){
+    this.cor = cor;
 }
+
+const l1 = new lampada('Branca')
+
+console.log(l1);
+
+// Instanciação de Objetos - Forma 5 (Objeto a partir de classes)
+
+const p1 = new Pessoa('Giulia', 'Almeida')
+
+console.log(p1);
+console.log(p1.nome);
+
+p1.falar('Paralelepipedo')
+p1.comer()
