@@ -1,5 +1,8 @@
 //Anotações e Resumindo algumas coisas
 
+//Quebra de linha (\n)
+console.log('Paralelepipedo \n rapa');
+
 let numero = [1, 5, 6,]
 
 numero.map // cria um array com o msm lenght com alterações ditas por uma function.
@@ -47,3 +50,10 @@ delete familia[7]; // deletando dados de um array (sobra empty item)
 familia.splice(7, 1) // a partir do índice 7 deleta 1 elemento
 
 familia.splice(7, 0 , 'Julia') // A partir do índice 7 não delete nenhum, mas adicione 'Julia'
+
+greeting.trim(); // remove espaços da string
+
+// existem as que removem em apenas na opção desejada
+greeting.trimStart(); // começo
+
+greeting.trimEnd() // final

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Inline</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        button{
+            height: 50px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mudarCor(this)">Por favor, clique-me!</button>
+    <span class="info" id="info" onmouseover="mudarTexto(this)">Atenção!, não clique no botão acima!</span>
+    <input onkeyup="escreveTexto(this);">
+    <span id="info"></span>
+    <script src="./script.js"></script>
+</body>
+</html>
