@@ -1,2 +1,0 @@
-//Entendendo e utilizando promises
-

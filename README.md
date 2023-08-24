@@ -1,2 +1,3 @@
-# javascript
- Repositório para Estudo de JavaScript (Desafios e Exercícios).
+# Javascript
+ Repositório para Estudo de JavaScript
+ 
