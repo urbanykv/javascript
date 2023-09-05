@@ -19,7 +19,7 @@ btn.onclick = function(){
     //Enviar requisição
     ajax.send(null);
 
-    //imrprimir na tela
+    //imprimir na tela
     ajax.onreadystatechange = function(){
         //Criar elemento span
         let spanNone = document.createElement('span')
