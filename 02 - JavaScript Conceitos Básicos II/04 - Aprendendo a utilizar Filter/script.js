@@ -45,3 +45,15 @@ console.log(result);
 result = alunos.filter(filtrarNotasMaioresQueSete)
 console.log(alunos.length);
 console.log(result.length);
+
+const jogos = [
+    {nome: 'God of War', plataforma: 'Playstation', valor: 159.99},
+    {nome: 'Forza Horizon', plataforma: 'Xbox', valor: 259.99},
+    {nome: 'Uncharted', plataforma: 'Playstation', valor: 259.99},
+    {nome: 'GTA V', plataforma: 'MultiPlataforma', valor: 59.99}
+]
+
+
+function buscarPorPlataforma(jogo){
+    if
+}
