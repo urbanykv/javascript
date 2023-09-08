@@ -52,8 +52,3 @@ const jogos = [
     {nome: 'Uncharted', plataforma: 'Playstation', valor: 259.99},
     {nome: 'GTA V', plataforma: 'MultiPlataforma', valor: 59.99}
 ]
-
-
-function buscarPorPlataforma(jogo){
-    if
-}
