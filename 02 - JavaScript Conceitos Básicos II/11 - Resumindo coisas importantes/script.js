@@ -7,7 +7,7 @@ let numero = [1, 5, 6,]
 
 numero.map // cria um array com o msm lenght com alterações ditas por uma function.
 
-numero.lenght // comprimento do array.
+numero.length // comprimento do array.
 
 numero.reduce // reduz o array usando em base o pedido de uma function.
 
