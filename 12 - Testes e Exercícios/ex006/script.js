@@ -1,4 +1,4 @@
-const chuvaDeMeteoros = [
+/*const chuvaDeMeteoros = [
     { nome: 'Alfa Centaurídeos', declinacao: -59},
     { nome: 'Gama Normídeos', declinacao: -50},
     { nome: 'Pi Pupídeos', declinacao: -45},
@@ -61,16 +61,25 @@ const receitas = [
     { nome: 'Pão de queijo', tempoPreparo: 20  },
     { nome: 'Pizza', tempoPreparo: 60 },
     { nome: 'Hamburguer', tempoPreparo: 60 },
-  ];
+  ];*/
   
-  const receitasRapidas = 
-  receitas.filter
-  ( receita => receita.tempoPreparo <= 10);
-  
-  for(const receita of receitasRapidas){
-    console.log(receita.nome);
-  }
+const numeros = [5, 10, 20, 30];
 
-  let nome = 'lucas'
+const soma = numeros.reduce((primeiroNumero, numeroSeguinte) => {
+  return  primeiroNumero + numeroSeguinte 
+})
 
-  const palavra = ' é um programador'
+const nome = ["Rebeca ", "Priscila ", "Pereira ", "Urban"];
+
+const imprimirNomePerNome = nome.forEach((nome) => {
+  console.log(nome);
+})
+
+console.log(imprimirNomePerNome);
+
+const nomeCompleto = nome.reduce((primeiroNome, nomeSeguinte) => {
+  return primeiroNome + nomeSeguinte
+})
+
+console.log(nomeCompleto);
+
