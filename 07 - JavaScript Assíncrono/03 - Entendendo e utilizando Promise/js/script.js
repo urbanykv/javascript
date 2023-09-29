@@ -51,3 +51,11 @@ btn.onclick = function(){
         })
 
 }
+
+function request () {
+    const request = new XMLHttpRequest();
+    request.open('GET' )
+}
+
+
+

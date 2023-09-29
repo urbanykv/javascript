@@ -1,17 +1,33 @@
-const pessoa = {
-    nome: 'Giulia',
-    idade: 19,
-    dataNascimento: '01/06/2004',
-    peso: 60,
-    altura: 1.58
+let num = 150
+
+const promise = new Promise((resolve, reject) => {
+    const conta2 = num + 300
+
+    if(conta2 !== 500){
+        resolve("Incorreto!!");;
+    }else{
+        reject("Correto!!");
+    }
+})
+
+.then(messagemResolve => {
+    console.log(messagemResolve);
+}) .catch(mensagemReject => { 
+    console.log(mensagemReject);
+})
+
+
+
+const primeiraFunction = () => {
+    const conta = num + 200
+
+    if(conta === 350){
+        console.log("Correto!!");
+    }else{
+        console.log("Incorreto!!");
+    }
 }
 
-console.log(pessoa);
 
-console.log(typeof(pessoa));
 
-const pessoaJson = JSON.stringify(pessoa)
-
-console.log(pessoaJson);
-
-console.log(typeof(pessoaJson));
+primeiraFunction()
