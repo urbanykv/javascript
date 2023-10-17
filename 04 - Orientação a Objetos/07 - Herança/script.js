@@ -126,7 +126,7 @@ class Cliente extends Pessoa{
     }
     imprimirDados(){
         super.imprimirDados(); // Imprimindo os dados da classe pai.
-        console.log(`${this._renda}`); // Imrprimir dados classe filha.
+        console.log(`${this._renda}`); // Imprimir dados classe filha.
     }
 }
 
