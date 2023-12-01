@@ -1,12 +1,15 @@
-// 2 - Crie uma função que receba dois valores inteiros como parâmetro e exiba todos os numeros ímpares entre estes dois números (sem incluí-los).
+const randomNumber = Math.floor(Math.random() * 8 + 1);
 
-function valores(n1, n2){
-    if(n1 % 2 === 0){
-        n1++;
-    }
-    for(let i = n1; i < n2; i += 2){
-        console.log(i);
-    }
+console.log(randomNumber);
+
+const pessoas = {
+    matheus: true, // 4
+    debora: true, // 8
+    rebeca: true, // 5
+    percio: true, // 2
+    leila: true, // 6
+    giulia: true, // 9
+    kaique: true, // 3
+    jaqueline: true, // 1
+    jorge: true, // 7
 }
-
-valores(1 , 8);
